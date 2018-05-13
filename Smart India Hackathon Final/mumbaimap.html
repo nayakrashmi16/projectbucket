@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <style>
+    body
+        {
+         margin:0px;
+
+        }
+
+                  .res
+        {
+      
+            border: solid;
+            border-color:#1abc9c;
+            border-width:4px;
+            display: inline-block;
+            white-space: nowrap;
+            width: 30%;
+            height: 200px;
+            position: relative;
+            top:5px;
+            font-size: 30px;
+            color:#1abc9c;
+            background-color:#323232;
+            text-decoration: none;
+            background-image: url("https://s21.postimg.org/697q2xx13/Untitled-1.jpg");
+            font-family: 'Titillium Web', sans-serif; 
+            text-decoration:none;
+            
+ 
+                    }
+
+        .icona
+        {
+            position: relative;
+            top: 40px;
+        }
+
+        #menu{
+          
+          
+          height: 60px;
+          background-color: Black;
+          box-shadow: 1px 5px 8px 0 rgba(0,0,0,0.3), 0 10px 20px 0 rgba(0,0,0,0.19);
+          text-align: center;
+          
+
+
+        }
+
+        label
+        {      
+        
+          font-family: 'Titillium Web', sans-serif; 
+          color: #1abc9c;
+            font-weight:bolder;
+            font-size: 45px;
+            
+
+        
+        }
+ 
+         div
+          {
+            margin:0px;
+          }
+
+          .carousel-inner > .item > img,
+          .carousel-inner > .item > a > img {
+              
+              margin:0px;
+              
+          }
+
+        .container {
+          padding-right: 0px;
+          padding-left: 0px;
+          padding: 0px;
+          margin:0px;
+          }
+
+          .carousel{
+            position: relative;
+            margin:0px;
+            bottom: 20px;
+          }
+        .icon
+        {
+          display: inline;
+        }
+
+         
+
+          .res h1{
+            color:Black;
+             font-family: 'Titillium Web', sans-serif;
+              font-weight:bold; font-size:20px;
+                position:absolute;
+                text-align: center;
+                margin:0px;
+                left: 200px;
+                top: 50px;
+                               
+
+          }
+
+          body,a,span  {
+    font-family: "Lato", sans-serif;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 0.9;
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration:none;
+    font-size: 25px;
+    color: White;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #1abc9c;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    
+    left: 120px;
+    top: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#mySidenav a{
+  text-decoration: none;
+}
+
+.iconh
+{
+
+  display: block;
+  text-align: center;
+  position: relative;
+  bottom:45px;
+  margin:0px;
+  padding: 0px;
+  
+
+}
+
+#mleft{
+
+    text-align: left;
+
+}
+
+
+
+  </style>
+
+<!--LINKS-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="slidesho=w.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <!--FONTS-->
+ <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+ <script type="text/javascript" src="slideshow.js"></script>
+ 
+
+</head>
+
+
+  <body>
+  
+
+    
+    <script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+
+
+    <div id="menu">
+      <div id=mleft>
+      <div id="mySidenav" class="sidenav">
+  <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+  <a href="index.html">HOME</a>
+  <a href="flightdetails.html">FLIGHTS</a>
+  <a href="map.html">MAPS</a>
+  <a href="shop.html">SHOPS</a>
+  <a href="service.html">SERVICES</a>
+  <a href="food.html">FOOD</a>
+  <a href="waiting.html">LOUNGE</a>
+  <a href="check.html">LOGIN</a>
+  <a href="pnr.html">MY FLIGHTS</a>
+  <a href="contact.html">CONTACTS</a>
+</div>
+
+
+<span style="cursor:pointer; color:White;  font-size:30px; position:relative; top:7px; left:7px;" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</div>
+
+   <img class="icon" width="48px" style="position:relative; bottom:55px; text-align:center;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACcklEQVRoQ+2az2oTURTGvzPQFBRsu2iysZgGXHRlsjCCKVo3rkpbEe227lzWJ2j6BOoT2KUZW2nBB0ikFcxm4rqYBPwDSRZOBF20kCP3jv3LxNx07sW03LsMJ2e+77u/c2eYhHDOF51z/dBugB8l0yBnHsQzYKRlQIQKmIrgzha9qVd0hqbVAC+mlgE87yqQ2Qdxngr1l7pMaDPAi5ObAM1LYdemgOQUMDIOtFtA6e1JvYxNcqsPdJjQYuAw+aEYcHsWGJ840tb8CrzfCNP6jArVF1FNRDYgmXccTwq58xCIXwW+fwZ2PcBvAft74RoFTsz3os5EdAOPU3kQViQ2N+8H4j+8UwuWsUpuNa9WHF6lwcBkEUR3D9MvrQOtb2qamEvk1mbUio0ZSPkgjGDuKRAbBtb7OGCYfXJrY4NhQPAvVvjAdpkDtMmtjv5nA38ROouKAUEoGOKzrIEY4uDRoSjnoJ/FaMPppOl1vd7P107XRj6FRMOejxDhCgfjRnag7cSjRM9IeYsKtYWeZQoFWnbgyERqGQwxE+E4CWwIeR2PEAfX1GpA4hTMxMLPiczK5eauvM6v+HVc+eKtwumsRWXeyAyE7fROucHHP89lE9rDEv2NNBWNrQGFAbY78K+QLEIWIcUEupVZhBQDtPcBi5AiKt3KLEIWIYtQxAQsQhEDtKeQRcgiFDGBC4vQ9sdGhQg35LsixqfpW4ngJ1fNy+Ap1FwC+FWgl57ksvE1zdqDziaaip6e92P09/6efPN8aSiWzGTGfBPXMmZAiN0uN2Tq09nEkgnxRndANN8pNyX3uWxc698LjodhdAdMpX6hDPwB8HEOQJTvGx0AAAAASUVORK5CYII=" width="48" height="48"><label style="position:relative; bottom:45px;">MAP</label>
+
+    
+    </div>
+
+
+<div class="map" style="width: 100%; text-align: center; position: relative; top: 10px;" >
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HziNlJ1tdDtdF7CWZGlIPbThTsk" width="480" height="640"></iframe>
+</div>
+
+
+  </body>
+
+
+
+</html>

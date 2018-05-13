@@ -1,0 +1,222 @@
+<html>
+<head>
+    <style>
+        body
+        {
+           margin:0px;
+           background-color:  #A3080C;
+           
+        }
+   
+
+              .jumbotron{
+                display: inline;
+                text-align: center;
+                margin: 0px;
+
+              }
+
+              .res{
+                text-align: center;
+                margin:0px;
+                margin-left:20px;
+                position: relative;
+                bottom: 50px;
+              }
+
+              .container1 h1{
+                text-align: center;
+                
+              }
+
+              .destination h1{
+              display:inline-block;  
+               color: White;
+               position: relative;
+                font-family: 'Titillium Web', sans-serif;
+
+
+              }
+
+              .destination{
+                position: relative;
+                bottom: 100px;
+              }
+
+        .menu
+        {
+           height: 60px;
+           padding-right: 300px;
+           background-color: Black;
+           box-shadow: 1px 5px 8px 0 rgba(0,0,0,0.3), 0 10px 20px 0 rgba(0,0,0,0.19);
+           
+        }
+
+        .menu a{
+            position: relative;
+            top: -60px;
+            left: 10px;
+        }
+
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 0.9;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+
+    font-size: 25px;
+    color: White;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #1abc9c;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    
+    left: 120px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.label,.label1{
+   
+ font-family: 'Titillium Web', sans-serif;
+ font-size:25px;
+ margin-left: 0px;
+
+
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 32px;
+    border-width: 0px;
+    text-decoration:none; 
+    font-size: 16px;
+    cursor: pointer;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+    </style>
+    <title>
+        AIRTRACK
+    </title>
+<!-- css -->
+
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--web fonts-->
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="menu">
+<div id="mySidenav" class="sidenav">
+  <a style="position:relative;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+  <a href="index.html">HOME</a>
+  <a href="flightdetails.html">FLIGHTS</a>
+  <a href="map.html">MAPS</a>
+  <a href="shop.html">SHOPS</a>
+  <a href="service.html">SERVICES</a>
+  <a href="food.html">FOOD</a>
+  <a href="waiting.html">LOUNGE</a>
+  <a href="check.html">LOGIN</a>
+  <a href="pnr.html">MY FLIGHTS</a>
+  <a href="contact.html">CONTACTS</a>
+</div>
+
+
+<span style="font-size:30px; cursor:pointer; position:relative;  top: 10px; left:5px;  color:White;" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</div><br><br><br>
+<div style="text-align: center;width:100%;" class="tiles">
+
+
+
+
+
+</div>
+
+<div class="jumbotron" >
+<div id="logo" class="res">
+
+</div>
+
+<div class="text" style=" font-family: 'Titillium Web', sans-serif; font-size:20px; color:White; border:solid; border-color:#5a0407; margin:0px; padding:0px; background-color:#d40a10">
+<h1 id="name" style="padding:0px;"></h1>
+</div>
+</div>
+  
+  <div id="details" class="info" style="font-family: 'Titillium Web', sans-serif; font-size:20px; color:White; text-align:center;">
+</div> 
+<h1 style="position:relative;  left:100px; color:White; ">COUPONS</h1> 
+
+<div class="coup" style="position:relative; top:50px; right:10px; display:inline-block; text-align:center,width:100%;" >
+<div class="res" style="color:white; border:dashed; border-color: White; ">
+
+<p id="but1" class="icona"> </p>
+<div  style=" position:relative; top:90px; padding:20px; padding-right: ">
+<button id="but" class="button" style="  position: relative;
+     bottom: 100px;"></button>
+</div>
+</div></a>
+
+
+
+
+</div>
+</div>
+
+
+
+<div id="sbut" style="text-align:center; position:relative; top:100px; border-width: 0px;">
+<a href="" class="button" style=" ">SHOW IN MAP</a>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+<script src="sdetailed.js"></script>
+
+</body>
+</html> 

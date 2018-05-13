@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <style>
+    body
+        {
+         margin:0px;
+
+        }
+
+        #menu{
+          
+          
+          height: 60px;
+          background-color: Black;
+          box-shadow: 1px 5px 8px 0 rgba(0,0,0,0.3), 0 10px 20px 0 rgba(0,0,0,0.19);
+          text-align: center;
+          
+
+
+        }
+
+               .res
+        {
+      
+            border: solid;
+            border-color:#1abc9c;
+            border-width:4px;
+            display: inline-block;
+            white-space: nowrap;
+            width: 100%;
+            height: 200px;
+            position: relative;
+            bottom:15px;
+            font-size: 30px;
+            color:#1abc9c;
+            background-color:#323232;
+            
+
+                    }
+
+        .icona
+        {
+            position: relative;
+            top: 40px;
+        }
+
+        label
+        {      
+        
+          font-family: 'Titillium Web', sans-serif; 
+          color: #1abc9c;
+            font-weight:bolder;
+            font-size: 45px;
+            
+
+        
+        }
+ 
+         div
+          {
+            margin:0px;
+          }
+
+          .carousel-inner > .item > img,
+          .carousel-inner > .item > a > img {
+              
+              margin:0px;
+              
+          }
+
+        .container {
+          padding-right: 0px;
+          padding-left: 0px;
+          padding: 0px;
+          margin:0px;
+          }
+
+          .carousel{
+            position: relative;
+            margin:0px;
+            bottom: 20px;
+          }
+        .icon
+        {
+          display: inline;
+        }
+
+         .icont
+        {
+            position: relative;
+            top: 65px;
+            left: 50px;
+        }
+
+         .tile
+        {
+      
+            border: solid;
+            border-color:Teal;
+            border-width:7px;
+            display: inline-block;
+            white-space: nowrap;
+            width: 100%;
+            height: 220px;
+
+            background-color:White;
+  
+          }
+
+          .res h1{
+            color:Black;
+             font-family: 'Titillium Web', sans-serif;
+              font-weight:bold; font-size:20px;
+                position:absolute;
+                text-align: center;
+                margin:0px;
+                left: 200px;
+                top: 50px;
+                               
+
+          }
+
+          body,a,span  {
+    font-family: "Lato", sans-serif;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 0.9;
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration:none;
+    font-size: 25px;
+    color: White;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #1abc9c;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    
+    left: 120px;
+    top: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#mySidenav a{
+  text-decoration: none;
+}
+
+.iconh
+{
+
+  display: block;
+  text-align: center;
+  position: relative;
+  bottom:45px;
+  margin:0px;
+  padding: 0px;
+  
+
+}
+
+#mleft{
+
+    text-align: left;
+
+}
+
+
+  </style>
+
+<!--LINKS-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="slidesho=w.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <!--FONTS-->
+ <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+ <script type="text/javascript" src="slideshow.js"></script>
+ 
+
+</head>
+
+
+  <body>
+  
+
+    <div id="menu">
+      <div id=mleft>
+      <div id="mySidenav" class="sidenav">
+  <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+  <a href="index.html">HOME</a>
+  <a href="flightdetails.html">FLIGHTS</a>
+  <a href="map.html">MAPS</a>
+  <a href="shop.html">SHOPS</a>
+  <a href="service.html">SERVICES</a>
+  <a href="food.html">FOOD</a>
+  <a href="waiting.html">LOUNGE</a>
+  <a href="check.html">LOGIN</a>
+  <a href="pnr.html">MY FLIGHTS</a>
+  <a href="#">CONTACTS</a>
+</div>
+
+
+<span style="cursor:pointer; color:White;  font-size:30px; position:relative; top:7px; left:7px;" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</div>
+
+   <img class="icon" width="48px" style="position:relative; bottom:55px; text-align:center;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEcUlEQVRoQ+1XXWhbZRh+3qRZu/ys8YdU5lZTliY6J8vQeVFKSd2FiEKzITO5kPVU8EZ07d1WLxYvWi+X6X0TLyRlKDsi9Qc2GoeIVN2UKdhWadqtF1ao6ayjdpBXvphkSc45S9JzjrKS76qk3/e+z/M+z/t+3yHc44vucfxoEvi/FWwq0FRAZwV0Wej0+DfDDAwQEBI4GJwBUbLt75ZzsdihrE5sdR3XRWB0bCaYI0oT0F6eTRAhWGJvjz71Xl0odGzSRUDkPTU2M0hECTUMDKQtzCPjbz79vRbGRGrBC7o9AHAIIKGke+n6Kr69sohunwfr6xury8vZdYe99fPzyWOvVsfRTaAWiULCeOtmy1tFW90BjUEAwWpQ135axief/Yi9e+7Dkf7HMP/LSp5Mh8eVBbEkvRSQi2dKBELhT7055ISfRdAMwS6l5f66fXw3JUQystLSQw/ulF0OW58a6HISGxu3IUj4fR60t9sV4kkRfwl36Y++o1MyAQOl3cxZJgxfvvBC3T4+NTYTJ6KTxRgWK8Fpt8Fpt8Lp2KEAIoC2tdka6wCGJEX9SRUFpt1Mt4RXH6mIyJwmWKW0/Fymnkynx2eSTseOEw57C1x2GwQJrXX23Utwu3dCermnZmhmfEFWDEvH/RX9VBG9N/xxyEqWaUU0oQYodll+/pxmM56fCyIHUf2waES1fV9+9StWfr+JYwOH8v/+UL6KDs8u9PbsUw3LwBoYMlkRrwauUKD4Q194Kk6UB6JcVWoUmvEkwGGAvNUHflv5E9dvrOLA/t15qwjAYsKMvH5Es+Il0BaWy5tV64BC31BYWOmvNEAH1Q65HLabBw88cMnndXWpNaMA3eFx5Y9enP4Z311ZRPT4YXTuvT//m5rvGwVdjkvVoKHwVJAJV8s3+rp2oXO3A517nJrVK46/Z0IBHH7Si7W1W1i68QeeePxhTYswcq+9Enn0/ZpNoLFBs8P6wlOx1lbrmf1+N3xeF5yO2tNCAL44PYveHl9JhbsBY+bFoWhAYb1GyKgSKHj7DP69E3QtBoO0vpuqRuJWElUQSKTmQyAWwPOPMz0r7+scviYLnlWfB/qrL+IqCDB4kAgntgqewR8Rkywum8Tk/DDAZzUaoOJC2mo+dQtdWHBjczPEORIz3QtCsPrFKRIWpoe4WDIEpAFbWop2lS68iclZmUB3bvcCSiO8XyRsyGNOq3oTk3NZNeIwwPumEygMgoVqcgz+YSgSULxADbXQVoOVn0uk5gZBUH4nMPVL0e60ETkUTWxUUBFnIjWXrB4GosGHIgHRV4Yt03pgIjWbIaLSy1Y0PLEtWN7kRrAwhYC6/2lEinTHjQBdHsMkApX+F2/5oahf9+WoRt4UAuX+z3+ItNnC0tGuuj9PG1HJLAJiymQIlDRy4vxnCjRSQb17TVFAL6hGzjcJNFItM/ZuPwVefGOUzaiUUTE/eGe8ougKBZoEjCq1Rpztr4DJBTQ8/PabQoaXyOSATQVMLnDN8E0FapbI5A3/AFy3jEAgDH9RAAAAAElFTkSuQmCC" width="48" height="48"><label style="position:relative; bottom:45px; ">FLIGHT</label>
+
+    
+    </div>
+
+
+<div style="width:100%;" class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+     
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images\f1.jpg" alt="Chania" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images\f2.jpg" alt="Chania" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="images\f3.jpg" alt="Flower" style="width:100%;">
+      </div>
+    
+    
+  </div>
+</div>
+</div>
+
+<a href="list.html?v=Arrival">
+<div class="res" style=" text-align:center;">
+
+<img class="icona" src="data:image/png;base64,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" width="96" height="96"><p class="icona"> ARRIVAL</p>
+</div></a>
+
+
+<a href="list.html?v=Departure"  >
+<div class="res" style="margin-top: 6px; text-align:center;">
+<img class="icona" src="data:image/png;base64,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" width="96" height="96">
+<p class="icona">DEPARTURE</p>
+</div></a>
+
+
+
+
+
+
+</div>
+  
+
+
+  </body>
+
+
+
+</html>
