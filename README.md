@@ -37,3 +37,5 @@ Used Genetic Algorithms to simulate the Biological Phenomenon of Natural Selecti
 Technology Stack:
 Front End: HTML, CSS
 Back End: JavaScript
+
+
