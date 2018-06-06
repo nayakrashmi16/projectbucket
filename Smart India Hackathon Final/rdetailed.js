@@ -21,36 +21,36 @@ function gotData(data) {
 	console.log(k);
 	var imgurl=food[k].Logo;
 	var resRef = db.ref('Location').orderByKey().equalTo(k);
-				resRef.on('value', gData);
-				function gData(data1){
-					var Loc = data1.val();
-					var kies = Object.keys(Loc);
-					for(var j = 0; j < kies.length; j++) {
-						var l = kies[j];
-						var lat = Loc[l].Latitude;
-						var lon = Loc[l].Longitude;
-						//console.log(lat);
-						var mapUrl = "https://www.google.com/maps/dir/Current+Location/"+lat+","+lon;
-						document
-							.getElementById("mbut")
-							.innerHTML = '<a href="'+mapUrl+'" class="button" style="text-align:center;">SHOW IN MAP</a>';
-						}
-document
-	.getElementById("name")
-	.innerHTML=k;
-document
-	.getElementById("but")
-	.innerHTML=food[k].Coupon;
-document
-	.getElementById("but1")
-	.innerHTML=food[k].Offers;
-document
-	.getElementById("details")
-	.innerHTML=food[k].Description;
-document.getElementById("logo")
-						.innerHTML='<img class="icon" style="margin:0px; text-align:center; position:relative; top:20px; right:5px; border:dotted; border-color:#01ffff;" src="'+imgurl+'" width="200" height="200">'}
+	resRef.on('value', gData);
+	function gData(data1){
+		var Loc = data1.val();
+		var kies = Object.keys(Loc);
+		var l = kies[0];
+		var lat = Loc[l].Latitude;
+		var lon = Loc[l].Longitude;
+		//console.log(lat);
+		var mapUrl = "https://www.google.com/maps/dir/Current+Location/"+lat+","+lon;
+		document
+			.getElementById("mbut")
+			.innerHTML = '<a href="'+mapUrl+'" class="button" style="text-align:center;">SHOW IN MAP</a>';
+		document
+			.getElementById("name")
+			.innerHTML=k;
+		document
+			.getElementById("but")
+			.innerHTML=food[k].Coupon;
+		document
+			.getElementById("but1")
+			.innerHTML=food[k].Offers;
+		document
+			.getElementById("details")
+			.innerHTML=food[k].Description;
+		document.getElementById("logo")
+								.innerHTML='<img class="icon" style="margin:0px; text-align:center; position:relative; top:20px; right:5px; border:dotted; border-color:#01ffff;" src="'+imgurl+'" width="200" height="200">'
+
+	}
 }
-		function errData(err){
-			console.log("Error!");
-			console.log(err);
-		}
+function errData(err){
+	console.log("Error!");
+	console.log(err);
+}

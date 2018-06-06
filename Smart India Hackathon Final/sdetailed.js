@@ -18,21 +18,19 @@ function gotData(data) {
 	var keys = Object.keys(shop);
 	var k = keys[0];
 	var imgurl=shop[k].Logo;
-var shopRef = db.ref('Location').orderByKey().equalTo(k);
-				shopRef.on('value', gData);
-				function gData(data1){
-					var Loc = data1.val();
-					var kies = Object.keys(Loc);
-					for(var j = 0; j < kies.length; j++) {
-						var l = kies[j];
-						var lat = Loc[l].Latitude;
-						var lon = Loc[l].Longitude;
-						//console.log(lat);
-						var mapUrl = "https://www.google.com/maps/dir/Current+Location/"+lat+","+lon;
-						document
-							.getElementById("sbut")
-							.innerHTML = '<a href="'+mapUrl+'" class="button" style="text-align:center;">SHOW IN MAP</a>';
-						}
+	var shopRef = db.ref('Location').orderByKey().equalTo(k);
+	shopRef.on('value', gData);
+	function gData(data1){
+		var Loc = data1.val();
+		var kies = Object.keys(Loc);
+		var l = kies[0];
+		var lat = Loc[l].Latitude;
+		var lon = Loc[l].Longitude;
+		//console.log(lat);
+		var mapUrl = "https://www.google.com/maps/dir/Current+Location/"+lat+","+lon;
+		document
+			.getElementById("sbut")
+			.innerHTML = '<a href="'+mapUrl+'" class="button" style="text-align:center;">SHOW IN MAP</a>';
 document
 	.getElementById("name")
 	.innerHTML=k;
